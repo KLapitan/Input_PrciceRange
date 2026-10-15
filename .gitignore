@@ -11,8 +11,11 @@ node_modules
 dist
 dist-ssr
 *.local
+.env 
+.env*
+interactive-pricing-component-main/
 
-# Editor directories and files
+# Editor directories and filesg
 .vscode/*
 !.vscode/extensions.json
 .idea
