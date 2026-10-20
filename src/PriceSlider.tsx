@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  {  useState } from "react";
 import Price from "./price";
 import InputSlider from "./InputSlider";
 import Billing from "./Billing";
@@ -21,8 +21,8 @@ const PriceSlider = () => {
 
    const [isMonthly,setIsMonthly] = useState<boolean>(false)
 
-    const [startTrial,setStartTrial] =useState<startTrialDemo>({
-    rangeValuePrice,
+    const [startTrialPrice,setStartTrialPrice] =useState<startTrialDemo>({
+    rangeValuePrice:rangeValuePrice,
     isMonthly:false,
     })
 
@@ -44,12 +44,12 @@ const PriceSlider = () => {
 
     const handleStartTrial = () => {
      const finalTrialPrice : startTrialDemo = {
-     rangeValuePrice,
+     rangeValuePrice:rangeValuePrice,
       isMonthly
       
       }
      
-      setStartTrial(finalTrialPrice)
+    setStartTrialPrice(finalTrialPrice)
 
         
       console.log(finalTrialPrice)
@@ -69,7 +69,7 @@ const PriceSlider = () => {
        {/* container for priceslider */}
       <div className="absolute sm:place-self-center sm:top-2 inset-x-0   h-auto  w-full  rounded-md bg-white flex flex-col gap-7 justify-center items-center shadow-gray-100 shadow-lg  p-2  sm:w-155 md:h-100">
       {showThankyouMessage ? (
-        <ThankYouMessage/>
+        <ThankYouMessage startTrialPrice={startTrialPrice.rangeValuePrice}/>
       
       ) : (
       
