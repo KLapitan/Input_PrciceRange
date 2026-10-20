@@ -6,7 +6,7 @@ className?:string;
 
 const Price = ({children, className } :PriceStyleProps) => {
   return (
-      <p className={`${className}`}> <span className="text-4xl font-bold text-Nslate-800 ">${children}.00</span> <span className="text-Nslate-400 text-sm font-semibold">  / month</span> </p>
+      <p className={`${className}`}> <span className="text-4xl font-bold text-NSlate-800 ">${children}.00</span> <span className="text-NSlate-400 text-sm font-semibold">  / month</span> </p>
   );
 }
 

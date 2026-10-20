@@ -77,7 +77,7 @@ const PriceSlider = () => {
 
       <div className="flex md:flex-row items-center  justify-center md:justify-between w-full md:w-140 p-2 md:p-4  ">
       
-              <h2 className="text-center  text-Nslate-400 text-sm font-semibold tracking-wider">100K PAGEVIEWS</h2>
+              <h2 className="text-center  text-NSlate-400 text-sm font-semibold tracking-wider">100K PAGEVIEWS</h2>
 
               <Price className="w-auto  hidden md:flex md:flex-row md:items-center md:gap-2">{rangeValuePrice}</Price>
       </div>
