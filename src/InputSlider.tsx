@@ -1,7 +1,7 @@
 
 // we goterror verbalModuleSyntax
 // if we dont put type insde with ChangeEvent
-import  { type ChangeEvent } from "react";  
+// import  { type ChangeEvent } from "react";  
 
 type InputProps = {
 rangeValuePrice?:number,
