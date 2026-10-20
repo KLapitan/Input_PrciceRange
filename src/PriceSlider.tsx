@@ -9,8 +9,8 @@ import ThankYouMessage from "./ThankYouMessage";
 
 
 type startTrialDemo =  {
-rangeValuePrice?:number;
-isMonthly?:boolean;
+rangeValuePrice:number;
+isMonthly:boolean;
 }
 
 
