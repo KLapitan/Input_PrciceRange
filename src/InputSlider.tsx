@@ -16,8 +16,8 @@ const InputSlider = ({rangeValuePrice, min , max, handlePriceRange , percentage}
  
  
   return (
-    <label className="w-full md:w-135 border p-2">
-              <input type="range"  className=" price-slider  " min={min} max={max} defaultValue={rangeValuePrice} value={rangeValuePrice} onChange={handlePriceRange} style={{
+    <label className="w-full md:w-135  p-2">
+              <input type="range"  className=" price-slider hover:cursor-grab  " min={min} max={max}  value={rangeValuePrice} onChange={handlePriceRange} style={{
               background:  `linear-gradient(to right, #10d5c2 ${percentage}%, #e5e7eb ${percentage}%)`
                 }}/>
               </label>
