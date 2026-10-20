@@ -1,6 +1,4 @@
-import type React from "react";
-
-
+// remove all import changeivent
 // if we pass children as a argument
 type PriceStyleProps = React.PropsWithChildren <{
 className?:string;
